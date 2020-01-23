@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,700;);
+
+.line {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-weight: 100;
+    margin: 100px auto;
+}
+.line .pic {
+    font-size: 26px;
+    margin: 10px;
+    min-width: 300px;
+    height: 250px;
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+    overflow: hidden;
+}
+.line .pic * {
+    transition: 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+}
+.line .pic:nth-of-type(1) {
+    background-image: url(pics/bg1.jpg);
+}
+.line .pic:nth-of-type(2) {
+    background-image: url(pics/bg2.jpg);
+}
+.line .pic:nth-of-type(3) {
+    background-image: url(pics/bg3.jpg);
+}
+
+.a1 .pic .shtora{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.a1 .pic .shtora p {
+    opacity: 0;
+    transition: 0.2s 0.2s;
+}
+.a1 .pic:hover .shtora p {
+    opacity: 1;
+}
+.a1 .pic:hover .shtora{
+    opacity: 1;
+}
+.a1 .pic .cinema {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+}
+.a1 .pic .c1 {
+    top: -50px;
+}
+.a1 .pic .c2 {
+    bottom: -50px;
+}
+.a1 .pic:hover .c1 {
+    top: 0px;
+}
+.a1 .pic:hover .c2 {
+    bottom: 0px;
+}
+
+.a2 .pic {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.a2 .pic .shtora{
+    background-color: rgba(50,50,50,0.8);
+    width: 90%;
+    height: 0;
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+}
+.a2 .pic .shtora span {
+    background-color: #ae895d;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.a2 .pic .shtora p {
+    margin: 60px 0 20px;
+}
+.a2 .pic .shtora * {
+    transition: 0.4s 0.3s;
+    opacity: 0;
+    transform: translateY(-20px)
+}
+.a2 .pic:hover .shtora{
+    height: 90%;
+}
+.a2 .pic:hover .shtora * {
+    opacity: 1;
+    transform: translateY(0px)
+}
+
+.a3 .pic * {
+    transition: 0.4s;
+}
+.a3 .pic .shtora {
+    font-family: 'Verdana';
+    font-size: 14px;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    color: #fff;
+}
+.a3 .pic:hover .shtora {
+    background-color: rgba(0,0,0,0.7);
+}
+.a3 .pic .shtora p {
+    position: absolute;
+    width: 75%;
+    left: 30px;
+    bottom: 90px;
+    text-transform: none;
+    text-align: left;
+    opacity: 0;
+}
+.a3 .pic:hover .shtora p {
+    opacity: 1;
+    transition: 0.3s 0.1s;
+}
+.a3 .pic .shtora .stroke1 {
+    width: 3px;
+    height: 204px;
+    background-color: #fff;
+    position: absolute;
+    top:-204px;
+    left:20px;
+    transition: 0.3s 0s;
+}
+.a3 .pic .shtora .s2 {
+    top:250px;
+    left: 125px;
+    transition: 0.3s 0.1s;
+}
+.a3 .pic .shtora .stroke2 {
+    width: 400px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top:160px;
+    left:300px;
+    transition: 0.3s 0.15s;
+}
+.a3 .pic .shtora .s4 {
+    top:210px;
+    left: -400px;
+    transition: 0.3s 0.05s;
+}
+.a3 .pic span {
+    background-color: #fff;
+    padding: 6px 0;
+    width: 87px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 5;
+    top: 170px;
+    left: 30px;
+    cursor: pointer;
+}
+.a3 .pic:hover .shtora .s1 {
+    top:0;
+    left:20px;
+}
+.a3 .pic:hover .shtora .s2 {
+    top:168px;
+    left: 125px;
+}
+.a3 .pic:hover .shtora .s3 {
+    top:160px;
+    left:30px;
+}
+.a3 .pic:hover .shtora .s4 {
+    top:210px;
+    left: -280px;
+}
+
+.a4 .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a4 .pic span {
+    position: relative;
+    z-index: 5;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    border: solid 3px #fff;
+    padding: 10px;
+    font-size: 20px;
+    transform: scale(0);
+    cursor: pointer;
+}
+.a4 .pic:hover span {
+    transform: scale(1);
+}
+.a4 .pic .shtora {
+    position: absolute;
+    background-color: #000;
+    border: solid 3px #fff;
+    top:0;
+    left:0;
+    width: 200%;
+    height: 200%;
+    transform: rotate(45deg);
+}
+.a4 .pic .s1 {
+    left: -270px;
+    top: 130px;
+    transform: rotate(45deg) translateY(190px);
+}
+.a4 .pic .s2 {
+    left: 90px;
+    top: -250px;
+    transform: rotate(45deg) translateY(-190px);
+}
+.a4 .pic:hover .shtora {
+    transform: rotate(45deg) translateY(0px);
+}
+.a4 .pic:nth-of-type(1) {
+    background-image: url(pics/bg10.jpg);
+}
+.a4 .pic:nth-of-type(2) {
+    background-image: url(pics/bg11.jpg);
+}
+.a4 .pic:nth-of-type(3) {
+    background-image: url(pics/bg12.jpg);
+}
+
+.a3 .pic:nth-of-type(1) {
+    background-image: url(pics/bg7.jpg);
+}
+.a3 .pic:nth-of-type(2) {
+    background-image: url(pics/bg8.jpg);
+}
+.a3 .pic:nth-of-type(3) {
+    background-image: url(pics/bg9.jpg);
+}
+
+.a2 .pic:nth-of-type(1) {
+    background-image: url(pics/bg4.jpg);
+    background-position: 50% 50%;
+}
+.a2 .pic:nth-of-type(2) {
+    background-image: url(pics/bg5.jpg);
+}
+.a2 .pic:nth-of-type(3) {
+    background-image: url(pics/bg6.jpg);
+}
